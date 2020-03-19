@@ -1,0 +1,12 @@
+<mat-card class="form-array" fxLayout="column" fxLayoutGap="12px">
+  <ng-content></ng-content>
+  <button
+    fxFlexAlign="end"
+    mat-raised-button
+    [disabled]="formArray.disabled"
+    (click)="add.emit(formArray)"
+    color="primary"
+  >
+    add
+  </button>
+</mat-card>
